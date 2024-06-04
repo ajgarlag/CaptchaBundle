@@ -14,7 +14,7 @@ use Symfony\Component\Form\FormEvents;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Gregwar\CaptchaBundle\Validator\CaptchaValidator;
 use Gregwar\CaptchaBundle\Generator\CaptchaGenerator;
-use Symfony\Component\HttpFoundation\RequestStack; 
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Captcha type.
@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
  */
 class CaptchaType extends AbstractType
 {
-    const SESSION_KEY_PREFIX = '_captcha_';
+    public const SESSION_KEY_PREFIX = '_captcha_';
 
     /** @var SessionInterface */
     protected $session;
